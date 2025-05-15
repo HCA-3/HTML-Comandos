@@ -1,432 +1,201 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!-- CONFIGURACIÓN BÁSICA -->
+    <!-- METADATOS Y CONFIGURACIÓN BÁSICA -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guía Completa de Minecraft</title>
+    <title>Ejemplo Completo HTML</title>
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f5f5f5;
-            color: #333;
-        }
-        .seccion {
-            background-color: white;
-            border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 25px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            border-left: 5px solid #4CAF50;
-        }
-        .titulo-seccion {
-            color: #4CAF50;
-            margin-top: 0;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 15px 0;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #4CAF50;
-            color: white;
-        }
-        tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 4px;
-        }
-        .minecraft-btn {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-            border-radius: 4px;
-        }
+        body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; }
+        table, th, td { border: 1px solid #ddd; border-collapse: collapse; padding: 8px; }
+        th { background-color: #f2f2f2; }
+        .seccion { margin-bottom: 30px; padding: 15px; border-left: 4px solid #3498db; background-color: #f8f9fa; }
+        .titulo-seccion { color: #3498db; margin-top: 0; }
     </style>
 </head>
 <body>
 
-    <!-- ENCABEZADO PRINCIPAL -->
-    <header class="seccion" style="text-align: center; background-color: #4CAF50; color: white;">
-        <h1 style="margin: 0; font-size: 2.5em;">GUÍA COMPLETA DE MINECRAFT</h1>
-        <p style="font-size: 1.2em;">Todo lo que necesitas saber sobre el mundo de Minecraft</p>
+    <!-- ESTRUCTURA SEMÁNTICA - HEADER -->
+    <header>
+        <h1>Ejemplo Completo de HTML</h1>
+        
+        <!-- NAVEGACIÓN PRINCIPAL -->
+        <nav>
+            <a href="#texto">Texto</a> |
+            <a href="#listas">Listas</a> |
+            <a href="#tablas">Tablas</a> |
+            <a href="#formularios">Formularios</a>
+        </nav>
     </header>
 
-    <!-- MENÚ DE NAVEGACIÓN -->
-    <nav class="seccion">
-        <h2 class="titulo-seccion">NAVEGACIÓN RÁPIDA</h2>
-        <ul style="columns: 2;">
-            <li><a href="#basicos">Conceptos Básicos</a></li>
-            <li><a href="#biomas">Biomas</a></li>
-            <li><a href="#mobs">Criaturas (Mobs)</a></li>
-            <li><a href="#crafting">Sistema de Crafteo</a></li>
-            <li><a href="#redstone">Redstone</a></li>
-            <li><a href="#dimensiones">Dimensiones</a></li>
-            <li><a href="#logros">Logros y Avances</a></li>
-            <li><a href="#multiplayer">Modo Multijugador</a></li>
-        </ul>
-    </nav>
+    <main>
+        <!-- SECCIÓN DE TEXTO Y ENCABEZADOS -->
+        <section id="texto" class="seccion">
+            <h2 class="titulo-seccion">ENCABEZADOS</h2>
+            <h1>Encabezado 1</h1>
+            <h2>Encabezado 2</h2>
+            <h3>Encabezado 3</h3>
 
-    <!-- SECCIÓN: CONCEPTOS BÁSICOS -->
-    <section id="basicos" class="seccion">
-        <h2 class="titulo-seccion">CONCEPTOS BÁSICOS DE MINECRAFT</h2>
-        
-        <h3>Mecánicas Fundamentales</h3>
-        <ul>
-            <li><strong>Supervivencia:</strong> Administra tu hambre, salud y recursos</li>
-            <li><strong>Exploración:</strong> Descubre biomas, estructuras y tesoros</li>
-            <li><strong>Construcción:</strong> Crea desde casas simples hasta mega construcciones</li>
-            <li><strong>Combate:</strong> Enfrenta criaturas hostiles y jefes</li>
-        </ul>
-        
-        <h3>Modos de Juego</h3>
-        <table>
-            <tr>
-                <th>Modo</th>
-                <th>Descripción</th>
-            </tr>
-            <tr>
-                <td>Supervivencia</td>
-                <td>Modo estándar con salud, hambre y recolección de recursos</td>
-            </tr>
-            <tr>
-                <td>Creativo</td>
-                <td>Recursos ilimitados y capacidad de volar</td>
-            </tr>
-            <tr>
-                <td>Aventura</td>
-                <td>Diseñado para mapas personalizados con restricciones</td>
-            </tr>
-            <tr>
-                <td>Extremo</td>
-                <td>Como supervivencia pero con dificultad fija en difícil y sin reaparición</td>
-            </tr>
-        </table>
-    </section>
+            <h2 class="titulo-seccion">FORMATO DE TEXTO</h2>
+            <p>Este es un párrafo normal.</p>
+            <p>Texto con <strong>negrita</strong>, <em>cursiva</em>, <mark>resaltado</mark>, <small>pequeño</small>, <del>tachado</del> e <ins>insertado</ins>.</p>
+            <p>Ejemplos especiales: 2<sup>3</sup> = 8 y H<sub>2</sub>O</p>
+        </section>
 
-    <!-- SECCIÓN: BIOMAS -->
-    <section id="biomas" class="seccion">
-        <h2 class="titulo-seccion">BIOMAS DE MINECRAFT</h2>
-        
-        <h3>Biomas Principales</h3>
-        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px;">
-            <div>
-                <h4>Bosque</h4>
-                <img src="https://minecraft.wiki/images/Biome-Forest.png" alt="Bioma Bosque">
-                <p>Árboles abundantes, ideal para empezar. Puede ser normal, de flores o de abedules.</p>
-            </div>
-            <div>
-                <h4>Llanura</h4>
-                <img src="https://minecraft.wiki/images/Biome-Plains.png" alt="Bioma Llanura">
-                <p>Terreno plano con hierba alta, perfecto para construir. Aparecen caballos y aldeas.</p>
-            </div>
-            <div>
-                <h4>Desierto</h4>
-                <img src="https://minecraft.wiki/images/Biome-Desert.png" alt="Bioma Desierto">
-                <p>Arena, cactus y templos del desierto. De noche aparecen husks (zombis del desierto).</p>
-            </div>
-        </div>
-        
-        <h3>Biomas Especiales</h3>
-        <ul>
-            <li><strong>Mesa:</strong> Terracota de colores y minas abandonadas</li>
-            <li><strong>Jungla:</strong> Árboles enormes, templos y ocelotes</li>
-            <li><strong>Taiga:</strong> Bosques de abetos, aldeas de taiga y lobos</li>
-            <li><strong>Océano:</strong> Monumentos oceánicos, peces y ruinas submarinas</li>
-        </ul>
-    </section>
+        <!-- SECCIÓN DE LISTAS -->
+        <section id="listas" class="seccion">
+            <h2 class="titulo-seccion">LISTAS</h2>
+            
+            <h3>Lista no ordenada (ul)</h3>
+            <ul>
+                <li>Manzanas</li>
+                <li>Plátanos</li>
+                <li>Naranjas</li>
+            </ul>
 
-    <!-- SECCIÓN: CRIATURAS (MOBS) -->
-    <section id="mobs" class="seccion">
-        <h2 class="titulo-seccion">CRIATURAS (MOBS) DE MINECRAFT</h2>
-        
-        <h3>Criaturas Pasivas</h3>
-        <table>
-            <tr>
-                <th>Criatura</th>
-                <th>Descripción</th>
-                <th>Recursos</th>
-            </tr>
-            <tr>
-                <td>Vaca</td>
-                <td>Proporciona carne cruda, cuero y leche</td>
-                <td>Carne, Cuero</td>
-            </tr>
-            <tr>
-                <td>Oveja</td>
-                <td>Proporciona lana y carne cruda</td>
-                <td>Lana, Carne</td>
-            </tr>
-            <tr>
-                <td>Cerdo</td>
-                <td>Proporciona carne cruda</td>
-                <td>Carne</td>
-            </tr>
-        </table>
-        
-        <h3>Criaturas Hostiles</h3>
-        <table>
-            <tr>
-                <th>Criatura</th>
-                <th>Descripción</th>
-                <th>Drops</th>
-            </tr>
-            <tr>
-                <td>Zombi</td>
-                <td>Aparece de noche o en lugares oscuros</td>
-                <td>Carne podrida, hierro</td>
-            </tr>
-            <tr>
-                <td>Esqueleto</td>
-                <td>Dispara flechas desde la distancia</td>
-                <td>Huesos, flechas</td>
-            </tr>
-            <tr>
-                <td>Creeper</td>
-                <td>Explota al acercarse</td>
-                <td>Pólvora</td>
-            </tr>
-        </table>
-        
-        <h3>Jefes</h3>
-        <div style="display: flex; gap: 20px; flex-wrap: wrap;">
-            <div style="flex: 1; min-width: 300px;">
-                <h4>Ender Dragon</h4>
-                <img src="https://minecraft.wiki/images/Ender_Dragon.png" alt="Ender Dragon" style="width: 100%;">
-                <p>Jefe final del juego, se encuentra en el End. Debe ser derrotado para completar el juego.</p>
-            </div>
-            <div style="flex: 1; min-width: 300px;">
-                <h4>Wither</h4>
-                <img src="https://minecraft.wiki/images/Wither.png" alt="Wither" style="width: 100%;">
-                <p>Jefe creado por el jugador. Al ser invocado, destruye bloques a su alrededor.</p>
-            </div>
-        </div>
-    </section>
+            <h3>Lista ordenada (ol)</h3>
+            <ol>
+                <li>Primer paso</li>
+                <li>Segundo paso</li>
+                <li>Tercer paso</li>
+            </ol>
 
-    <!-- SECCIÓN: SISTEMA DE CRAFTEO -->
-    <section id="crafting" class="seccion">
-        <h2 class="titulo-seccion">SISTEMA DE CRAFTEO</h2>
-        
-        <h3>Recetas Básicas</h3>
-        <table>
-            <tr>
-                <th>Objeto</th>
-                <th>Materiales</th>
-                <th>Uso</th>
-            </tr>
-            <tr>
-                <td>Mesa de trabajo</td>
-                <td>4 tablas de madera</td>
-                <td>Permite craftear objetos más complejos</td>
-            </tr>
-            <tr>
-                <td>Horno</td>
-                <td>8 adoquines</td>
-                <td>Cocinar alimentos y fundir minerales</td>
-            </tr>
-            <tr>
-                <td>Pico de madera</td>
-                <td>2 palos + 3 tablas de madera</td>
-                <td>Minar piedra y minerales básicos</td>
-            </tr>
-        </table>
-        
-        <h3>Recetas Avanzadas</h3>
-        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 15px;">
-            <div>
-                <h4>Mesa de encantamientos</h4>
-                <p><strong>Materiales:</strong> 1 libro, 2 diamantes, 4 obsidiana</p>
-                <p><strong>Uso:</strong> Añadir encantamientos a herramientas y armaduras</p>
-            </div>
-            <div>
-                <h4>Yunque</h4>
-                <p><strong>Materiales:</strong> 3 bloques de hierro + 4 lingotes de hierro</p>
-                <p><strong>Uso:</strong> Reparar y combinar objetos encantados</p>
-            </div>
-            <div>
-                <h4>Mesa de herrería</h4>
-                <p><strong>Materiales:</strong> 2 lingotes de hierro + 4 tablas de madera</p>
-                <p><strong>Uso:</strong> Mejorar equipamiento de diamante a netherita</p>
-            </div>
-        </div>
-    </section>
+            <h3>Lista de definición (dl)</h3>
+            <dl>
+                <dt>HTML</dt>
+                <dd>Lenguaje de marcado para crear páginas web</dd>
+                <dt>CSS</dt>
+                <dd>Lenguaje para estilizar páginas web</dd>
+            </dl>
+        </section>
 
-    <!-- SECCIÓN: REDSTONE -->
-    <section id="redstone" class="seccion">
-        <h2 class="titulo-seccion">REDSTONE Y MECÁNICAS</h2>
-        
-        <h3>Componentes Básicos</h3>
-        <ul style="columns: 2;">
-            <li><strong>Polvo de redstone:</strong> Transmite señales</li>
-            <li><strong>Repetidor:</strong> Amplifica y retrasa señales</li>
-            <li><strong>Comparador:</strong> Compara señales o mide contenedores</li>
-            <li><strong>Pistón:</strong> Empuja bloques</li>
-            <li><strong>Observador:</strong> Detecta cambios en bloques</li>
-            <li><strong>Palanca/Botón/Placa de presión:</strong> Dispositivos de entrada</li>
-        </ul>
-        
-        <h3>Máquinas Básicas</h3>
-        <div style="display: flex; gap: 20px; flex-wrap: wrap;">
-            <div style="flex: 1; min-width: 300px;">
-                <h4>Puerta Automática</h4>
-                <p>Combina pistones con un sistema de activación (placa de presión o botón)</p>
-                <img src="https://minecraft.wiki/images/Redstone_Door.png" alt="Puerta de redstone" style="width: 100%;">
-            </div>
-            <div style="flex: 1; min-width: 300px;">
-                <h4>Granja Automática</h4>
-                <p>Usa pistones y observadores para recolectar cultivos automáticamente</p>
-                <img src="https://minecraft.wiki/images/Auto_Farm.png" alt="Granja automática" style="width: 100%;">
-            </div>
-        </div>
-    </section>
+        <!-- SECCIÓN DE TABLAS -->
+        <section id="tablas" class="seccion">
+            <h2 class="titulo-seccion">TABLAS</h2>
+            <table>
+                <caption>Ejemplo de tabla con encabezados</caption>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Edad</th>
+                        <th>Ciudad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ana</td>
+                        <td>25</td>
+                        <td>Madrid</td>
+                    </tr>
+                    <tr>
+                        <td>Carlos</td>
+                        <td>30</td>
+                        <td>Barcelona</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Total personas:</td>
+                        <td>2</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
 
-    <!-- SECCIÓN: DIMENSIONES -->
-    <section id="dimensiones" class="seccion">
-        <h2 class="titulo-seccion">DIMENSIONES DE MINECRAFT</h2>
-        
-        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px;">
-            <div>
-                <h3>Overworld (Mundo Normal)</h3>
-                <img src="https://minecraft.wiki/images/Overworld.png" alt="Overworld">
-                <p>El mundo principal donde comienzas. Contiene todos los biomas principales, estructuras y la mayoría de criaturas.</p>
-            </div>
-            <div>
-                <h3>Nether</h3>
-                <img src="https://minecraft.wiki/images/Nether.png" alt="Nether">
-                <p>Dimensión infernal con lava, fortalezas y nuevos materiales. Se accede con un portal de obsidiana.</p>
-                <p><strong>Recursos exclusivos:</strong> Cuarzo del Nether, varitas de blaze, escoria antigua</p>
-            </div>
-            <div>
-                <h3>End</h3>
-                <img src="https://minecraft.wiki/images/End.png" alt="End">
-                <p>Dimensión final con islas flotantes y el Ender Dragon. Se accede con un portal del End encontrado en fortalezas.</p>
-                <p><strong>Recursos exclusivos:</strong> Perlas de ender, bloques de endstone, chorus fruit</p>
-            </div>
-        </div>
-    </section>
+        <!-- SECCIÓN DE FORMULARIOS -->
+        <section id="formularios" class="seccion">
+            <h2 class="titulo-seccion">FORMULARIOS</h2>
+            <form>
+                <fieldset>
+                    <legend>Información personal</legend>
+                    
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre"><br><br>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+                    
+                    <label for="contraseña">Contraseña:</label>
+                    <input type="password" id="contraseña" name="contraseña"><br><br>
+                    
+                    <label for="fecha">Fecha de nacimiento:</label>
+                    <input type="date" id="fecha" name="fecha"><br><br>
+                    
+                    <label for="pais">País:</label>
+                    <select id="pais" name="pais">
+                        <option value="es">España</option>
+                        <option value="mx">México</option>
+                        <option value="ar">Argentina</option>
+                    </select><br><br>
+                    
+                    <label>Género:</label>
+                    <input type="radio" id="hombre" name="genero" value="hombre">
+                    <label for="hombre">Hombre</label>
+                    <input type="radio" id="mujer" name="genero" value="mujer">
+                    <label for="mujer">Mujer</label><br><br>
+                    
+                    <label for="mensaje">Mensaje:</label><br>
+                    <textarea id="mensaje" name="mensaje" rows="4" cols="40"></textarea><br><br>
+                    
+                    <input type="checkbox" id="terminos" name="terminos" required>
+                    <label for="terminos">Acepto los términos y condiciones</label><br><br>
+                    
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpiar">
+                    <button type="button">Botón simple</button>
+                </fieldset>
+            </form>
+        </section>
 
-    <!-- SECCIÓN: LOGROS Y AVANCES -->
-    <section id="logros" class="seccion">
-        <h2 class="titulo-seccion">LOGROS Y AVANCES IMPORTANTES</h2>
-        
-        <h3>Logros Principales</h3>
-        <table>
-            <tr>
-                <th>Logro</th>
-                <th>Descripción</th>
-                <th>Consejo</th>
-            </tr>
-            <tr>
-                <td>¡Al espacio!</td>
-                <td>Construye un portal al Nether</td>
-                <td>Necesitas 10 bloques de obsidiana y un encendedor</td>
-            </tr>
-            <tr>
-                <td>Ojo de ender</td>
-                <td>Encuentra una fortaleza</td>
-                <td>Combina perlas de ender con polvo de blaze</td>
-            </tr>
-            <tr>
-                <td>El fin?</td>
-                <td>Derrota al Ender Dragon</td>
-                <td>Prepara buena armadura, arco y comida</td>
-            </tr>
-        </table>
-        
-        <h3>Avances Especiales</h3>
-        <ul>
-            <li><strong>Volver a casa:</strong> Usa un objeto del End para teletransportarte</li>
-            <li><strong>El principio?</strong> Entra al portal del End</li>
-            <li><strong>El principio del fin:</strong> Invoca al Wither</li>
-            <li><strong>Un horrible lugar:</strong> Entra a una ciudad del End</li>
-        </ul>
-    </section>
+        <!-- SECCIÓN DE MULTIMEDIA -->
+        <section class="seccion">
+            <h2 class="titulo-seccion">MULTIMEDIA</h2>
+            
+            <h3>Imágenes</h3>
+            <img src="https://via.placeholder.com/300x200" alt="Imagen de ejemplo" width="300" height="200">
+            
+            <h3>Audio</h3>
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+            
+            <h3>Video</h3>
+            <video width="320" height="240" controls>
+                <source src="video.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+        </section>
 
-    <!-- SECCIÓN: MULTIJUGADOR -->
-    <section id="multiplayer" class="seccion">
-        <h2 class="titulo-seccion">MODO MULTIJUGADOR</h2>
-        
-        <h3>Opciones de Multijugador</h3>
-        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px;">
-            <div>
-                <h4>Servidores Públicos</h4>
-                <p>Juega en servidores con cientos de jugadores. Ejemplos populares:</p>
-                <ul>
-                    <li>Hypixel (minijuegos)</li>
-                    <li>Mineplex (minijuegos)</li>
-                    <li>2b2t (anarquía)</li>
-                </ul>
-            </div>
-            <div>
-                <h4>LAN</h4>
-                <p>Juega con amigos en tu red local sin necesidad de servidor</p>
-                <p><strong>Ventaja:</strong> Fácil de configurar, baja latencia</p>
-            </div>
-            <div>
-                <h4>Servidor Privado</h4>
-                <p>Crea tu propio servidor para jugar con amigos</p>
-                <p><strong>Opciones:</strong> Aternos (gratis), hostings pagados, auto-hosting</p>
-            </div>
-        </div>
-        
-        <h3>Comandos Útiles</h3>
-        <table>
-            <tr>
-                <th>Comando</th>
-                <th>Función</th>
-                <th>Ejemplo</th>
-            </tr>
-            <tr>
-                <td>/tp</td>
-                <td>Teletransporta a un jugador</td>
-                <td>/tp jugador1 jugador2</td>
-            </tr>
-            <tr>
-                <td>/gamemode</td>
-                <td>Cambia el modo de juego</td>
-                <td>/gamemode creative jugador</td>
-            </tr>
-            <tr>
-                <td>/give</td>
-                <td>Da objetos a un jugador</td>
-                <td>/give jugador minecraft:diamond 64</td>
-            </tr>
-        </table>
-    </section>
+        <!-- SECCIÓN DE ELEMENTOS SEMÁNTICOS -->
+        <section class="seccion">
+            <h2 class="titulo-seccion">ELEMENTOS SEMÁNTICOS</h2>
+            
+            <article>
+                <h3>Artículo independiente</h3>
+                <p>Este es un artículo independiente que podría ser distribuido por sí solo.</p>
+                <footer>Publicado el <time datetime="2023-05-15">15 de mayo</time></footer>
+            </article>
+            
+            <aside>
+                <h4>Contenido relacionado</h4>
+                <p>Este contenido está relacionado con el artículo principal pero es secundario.</p>
+            </aside>
+            
+            <details>
+                <summary>Información adicional</summary>
+                <p>Contenido que se muestra al hacer clic en el resumen.</p>
+            </details>
+        </section>
+    </main>
 
     <!-- PIE DE PÁGINA -->
-    <footer class="seccion" style="text-align: center; background-color: #333; color: white;">
-        <h3>GUÍA COMPLETA DE MINECRAFT</h3>
-        <p>© 2023 - Todos los derechos reservados</p>
-        <p>Actualizado para Minecraft 1.20</p>
-        <div style="margin-top: 15px;">
-            <a href="#" class="minecraft-btn">Volver arriba</a>
-            <a href="https://www.minecraft.net" class="minecraft-btn" target="_blank">Sitio oficial</a>
-            <a href="https://minecraft.wiki" class="minecraft-btn" target="_blank">Wiki de Minecraft</a>
-        </div>
+    <footer>
+        <p>&copy; 2023 Ejemplo HTML Completo</p>
+        <address>
+            Contacto: <a href="mailto:info@ejemplo.com">info@ejemplo.com</a><br>
+            Teléfono: <a href="tel:+34987654321">987 654 321</a>
+        </address>
     </footer>
-
 </body>
 </html>
